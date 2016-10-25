@@ -1,24 +1,11 @@
 # ZmqBroker
 
-**TODO: Add description**
+This is a simple elixir based ZeroMQ XPUB XSUB proxy / broker.
 
-## Installation
+The XSUB is on port 5570
+The XPUB is on port 5571
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+Dockerfile included, just pull the image producture/zmqbroker
 
-  1. Add `zmq_broker` to your list of dependencies in `mix.exs`:
 
-    ```elixir
-    def deps do
-      [{:zmq_broker, "~> 0.1.0"}]
-    end
-    ```
-
-  2. Ensure `zmq_broker` is started before your application:
-
-    ```elixir
-    def application do
-      [applications: [:zmq_broker]]
-    end
-    ```
 

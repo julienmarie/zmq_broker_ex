@@ -87,12 +87,6 @@ RUN /usr/local/bin/mix local.hex --force && \
 RUN apt-get -y install build-essential
 
 
-
-
-#WORKDIR /usr/local/bin
-#RUN wget https://s3.amazonaws.com/rebar3/rebar3 && chmod +x rebar3
-#RUN cp ./rebar3 ./rebar
-
 WORKDIR /
 
 RUN mkdir /app
