@@ -1,0 +1,18 @@
+{
+  "id": "zmqbroker",
+  "cmd": "/app/rel/zmq_broker/bin/zmq_broker start",
+  "cpus": 2,
+  "mem": 2048.0,
+  "instances": 1,
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "producture/zmqbroker",
+      "forcePullImage": true,
+      "network": "HOST",
+      "ports": [
+          5570, 5571
+      ],
+    }
+  },
+}
