@@ -29,8 +29,8 @@ defmodule ZmqBroker.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-                 {:erlzmq, github: "zeromq/erlzmq2"}
-
+      {:erlzmq, github: "zeromq/erlzmq2"},
+      {:distillery, "~> 0.10"}
     ]
   end
 end

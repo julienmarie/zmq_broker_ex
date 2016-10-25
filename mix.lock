@@ -1,1 +1,2 @@
-%{"erlzmq": {:git, "https://github.com/zeromq/erlzmq2.git", "573d583930c4b1134e504bec83926d188112b401", []}}
+%{"distillery": {:hex, :distillery, "0.10.1", "14fccade4b8ab849b99e21c4bdfaa1092dbacdce8afd33f5c369c6e114385b0e", [:mix], []},
+  "erlzmq": {:git, "https://github.com/zeromq/erlzmq2.git", "573d583930c4b1134e504bec83926d188112b401", []}}
