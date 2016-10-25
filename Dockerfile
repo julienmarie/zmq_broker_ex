@@ -104,5 +104,5 @@ RUN mix test
 RUN MIX_ENV=prod mix compile
 RUN MIX_ENV=prod mix release
 EXPOSE 5570 5571
-CMD /app/rel/zmq_broker/bin/zmq_broker start
+CMD /app/rel/zmq_broker/bin/zmq_broker foreground
 

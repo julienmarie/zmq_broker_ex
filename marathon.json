@@ -1,6 +1,6 @@
 {
   "id": "zmqbroker",
-  "cmd": "/app/rel/zmq_broker/bin/zmq_broker start",
+  "cmd": "/app/rel/zmq_broker/bin/zmq_broker foreground",
   "cpus": 2,
   "mem": 2048.0,
   "instances": 1,
