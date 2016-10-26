@@ -10,8 +10,9 @@ defmodule ZmqBroker do
 
     # Define workers and child supervisors to be supervised
     children = [
-      worker(ZmqBroker.XPub, [context], restart: :permanent),
-      worker(ZmqBroker.XSub, [context], restart: :permanent),
+      worker(ZmqBroker.Broker, [%{id: :fanout, context: context, in_port: 5570, out_port: 5571, in_socket: :xsub, out_socket: :xpub}], [id: :fanout, restart: :permanent]),
+      worker(ZmqBroker.Broker, [%{id: :hello, context: context, in_port: 5572, out_port: 5573, in_socket: :pull, out_socket: :push}], [id: :hello, restart: :permanent]),
+
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html
