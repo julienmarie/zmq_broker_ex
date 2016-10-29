@@ -3,7 +3,7 @@
 This is a general broker for ZeroMQ with optional contract checking via json schemas.
 It allows to create "channels" on the fly via a rest API.
 It supports PUB/SUB (XPUB/XSUB), PULL/PUSH, REQ/REP (DEALER/ROUTER) brokerage.
-Also it 
+Also it optionally validates your json data with supplied JSON Schema files.
 
 # API
 
