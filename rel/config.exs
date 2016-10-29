@@ -32,6 +32,6 @@ end
 
 release :zmq_broker do
   set version: current_version(:zmq_broker)
-  set applications: [:erlzmq]
+  set applications: [:erlzmq, :maru, :httpoison, :ex_json_schema]
 end
 
