@@ -14,7 +14,7 @@ defmodule ZmqBroker.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger],
+    [applications: [:logger, :maru],
      mod: {ZmqBroker, []}]
   end
 
@@ -30,6 +30,9 @@ defmodule ZmqBroker.Mixfile do
   defp deps do
     [
       {:erlzmq, github: "zeromq/erlzmq2"},
+      {:httpoison, "~> 0.9.0"},
+      {:maru, "~> 0.10"},
+      {:ex_json_schema, "~> 0.5.1"},
       {:distillery, "~> 0.10"}
     ]
   end
