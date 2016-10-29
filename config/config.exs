@@ -5,10 +5,6 @@ use Mix.Config
 config :maru, ZmqBroker.Api,
     http: [port: 30050]
 
-config :ex_json_schema,
-  :remote_schema_resolver,
-  fn url -> HTTPoison.get!(url).body |> Poison.decode! end
-
 config :zmq_broker,
   events_port_sub: 30051,
   events_port_pub: 30052,
